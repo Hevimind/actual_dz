@@ -11,7 +11,7 @@ fun main(args: Array<String>) {
         (b==6&&c==4)||
         (c==4&&d==6)||
         (c==6&&d==4)) {
-        println("yes, the nuber $a has six and four")
+        println("yes, the number $a has six and four")
     } else {
         println("no, this number $a hasn't sixes and fours")
     }

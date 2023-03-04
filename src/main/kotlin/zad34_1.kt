@@ -6,6 +6,7 @@ fun main() {
         "1" -> cubenumbers()
         "2" -> fibbo()
         "3" -> flippendo()
+        "4" -> deletion()
     }
 }
 fun cubenumbers() {
@@ -41,5 +42,15 @@ fun flippendo() {
     while (i >= 0) {
         print(k.get(i))
         i--
+    }
+}
+fun deletion(){
+    print("Введите число: ")
+    var bas = readLine().toString()
+    print("Введите цифру для удаления: ")
+    var de = readlnOrNull()
+    var chu = bas.split("$de")
+    for (chunk in chu) {
+        print(chunk)
     }
 }

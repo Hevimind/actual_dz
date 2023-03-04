@@ -5,6 +5,7 @@ fun main() {
     when (d) {
         "1" -> cubenumbers()
         "2" -> fibbo()
+        "3" -> flippendo()
     }
 }
 fun cubenumbers() {
@@ -31,4 +32,14 @@ fun fibbo() {
             b = x+a
             i++
         }
+}
+fun flippendo() {
+    print("Введите число: ")
+    var k = readLine().toString()
+    var len = k.length
+    var i = len-1
+    while (i >= 0) {
+        print(k.get(i))
+        i--
+    }
 }

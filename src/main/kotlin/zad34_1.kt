@@ -7,6 +7,7 @@ fun main() {
         "2" -> fibbo()
         "3" -> flippendo()
         "4" -> deletion()
+        "5" -> shirakuz()
     }
 }
 fun cubenumbers() {
@@ -52,5 +53,17 @@ fun deletion(){
     var chu = bas.split("$de")
     for (chunk in chu) {
         print(chunk)
+    }
+}
+fun shirakuz(){
+    print("Введите число: ")
+    var fir = readLine().toString().toInt()
+    while (fir > 1) {
+        if (fir.mod(2)==0) {
+            fir = fir/2
+        } else {
+            fir = ((fir*3)+1)/2
+        }
+        println(fir)
     }
 }

@@ -8,6 +8,7 @@ fun main() {
         "3" -> flippendo()
         "4" -> deletion()
         "5" -> shirakuz()
+        "6" -> combo()
     }
 }
 fun cubenumbers() {
@@ -40,12 +41,15 @@ fun flippendo() {
     var k = readLine().toString()
     var len = k.length
     var i = len-1
+    var mirror = ""
     while (i >= 0) {
-        print(k.get(i))
+        var ch = k.get(i)
         i--
+        mirror = mirror + ch
     }
+    print(mirror)
 }
-fun deletion(){
+fun deletion() {
     print("Введите число: ")
     var bas = readLine().toString()
     print("Введите цифру для удаления: ")
@@ -55,7 +59,7 @@ fun deletion(){
         print(chunk)
     }
 }
-fun shirakuz(){
+fun shirakuz() {
     print("Введите число: ")
     var fir = readLine().toString().toInt()
     while (fir > 1) {
@@ -66,4 +70,7 @@ fun shirakuz(){
         }
         println(fir)
     }
+}
+fun combo() {
+
 }

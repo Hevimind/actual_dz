@@ -9,6 +9,7 @@ fun main() {
         "4" -> deletion4()
         "5" -> shirakuz5()
         "6" -> combo6()
+        "7" -> calc7()
     }
 }
 fun cubenumbers1() {
@@ -94,6 +95,22 @@ var i=0
                 if (i == S)
                 println("$a, $b, $c")
             }
+        }
+    }
+}
+fun calc7() {
+    print("Введите первое число: ")
+    var frst = readLine().toString().toInt()
+    print("Введите второе число: ")
+    var scnd = readLine().toString().toInt()
+    var oper = readLine().toString()
+    when (oper) {
+        "+" -> print(frst+scnd)
+        "-" -> print(frst-scnd)
+        "*" -> print(frst*scnd)
+        "/" -> {
+            if (scnd!=0) print(frst/scnd)
+            else print("Нельзя делить на нуль")
         }
     }
 }

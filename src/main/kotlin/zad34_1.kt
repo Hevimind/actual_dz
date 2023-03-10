@@ -3,26 +3,33 @@ fun main() {
     print("Введите номер задания: ")
     var d = readLine().toString()
     when (d) {
-        "1" -> cubenumbers()
-        "2" -> fibbo()
-        "3" -> flippendo()
-        "4" -> deletion()
-        "5" -> shirakuz()
-        "6" -> combo()
+        "1" -> cubenumbers1()
+        "2" -> fibbo2()
+        "3" -> flippendo3()
+        "4" -> deletion4()
+        "5" -> shirakuz5()
+        "6" -> combo6()
     }
 }
-fun cubenumbers() {
+fun cubenumbers1() {
     print("Введите первое число интервала: ")
     val a = readLine().toString().toInt()
     print("Введите второе число интервала: ")
     val b = readLine().toString().toInt()
     var cube = a.toDouble()
-        while (cube<=b) {
-        println(cube.pow(3))
-        cube++
+    if (a < b) {
+        while (cube <= b) {
+            println(cube.pow(3))
+            cube++
+        }
+    } else {
+        while (cube >= b) {
+            println(cube.pow(3))
+            cube--
+        }
     }
 }
-fun fibbo() {
+fun fibbo2() {
     print("Введите значение количества элементов последовательности: ")
     val n = readLine().toString().toInt()
     var i = 1
@@ -36,20 +43,22 @@ fun fibbo() {
             i++
         }
 }
-fun flippendo() {
+fun flippendo3() {
     print("Введите число: ")
     var k = readLine().toString()
     var len = k.length
     var i = len-1
-    var mirror = ""
+    var mirr = ""
+    var mirror = 0
     while (i >= 0) {
         var ch = k.get(i)
         i--
-        mirror = mirror + ch
+        mirr = mirr + ch
     }
+    mirror = mirr.toInt()
     print(mirror)
 }
-fun deletion() {
+fun deletion4() {
     print("Введите число: ")
     var bas = readLine().toString()
     print("Введите цифру для удаления: ")
@@ -59,7 +68,7 @@ fun deletion() {
         print(chunk)
     }
 }
-fun shirakuz() {
+fun shirakuz5() {
     print("Введите число: ")
     var fir = readLine().toString().toInt()
     while (fir > 1) {
@@ -71,6 +80,6 @@ fun shirakuz() {
         println(fir)
     }
 }
-fun combo() {
+fun combo6() {
 
 }

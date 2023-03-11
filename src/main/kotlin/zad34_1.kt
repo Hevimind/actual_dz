@@ -92,12 +92,7 @@ var i=0
         for (b in 1..N) {
             for (c in 1..N) {
                 i = a+b+c
-                if (i == S)
-                println("$a, $b, $c")
-            }
-        }
-    }
-}
+                if (i == S) println("$a, $b, $c") } } } }
 fun calc7() {
     print("Введите первое число: ")
     var frst = readLine().toString().toDouble()

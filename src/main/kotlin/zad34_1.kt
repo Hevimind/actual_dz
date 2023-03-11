@@ -82,17 +82,17 @@ fun shirakuz5() {
     }
 }
 fun combo6() {
-    var N = readLine().toString().toInt()
-    var S = readLine().toString().toInt()
+    var n = readLine().toString().toInt()
+    var s = readLine().toString().toInt()
 var i=0
     var a=0
     var b=0
     var c=0
-    for (a in 1..N) {
-        for (b in 1..N) {
-            for (c in 1..N) {
+    for (a in 1..n) {
+        for (b in 1..n) {
+            for (c in 1..n) {
                 i = a+b+c
-                if (i == S) println("$a, $b, $c") } } } }
+                if (i == s) println("$a, $b, $c") } } } }
 fun calc7() {
     print("Введите первое число: ")
     var frst = readLine().toString().toDouble()

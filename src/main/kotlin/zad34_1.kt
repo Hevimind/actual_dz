@@ -100,16 +100,16 @@ var i=0
 }
 fun calc7() {
     print("Введите первое число: ")
-    var frst = readLine().toString().toInt()
+    var frst = readLine().toString().toDouble()
     print("Введите второе число: ")
-    var scnd = readLine().toString().toInt()
+    var scnd = readLine().toString().toDouble()
     var oper = readLine().toString()
     when (oper) {
         "+" -> print(frst+scnd)
         "-" -> print(frst-scnd)
         "*" -> print(frst*scnd)
         "/" -> {
-            if (scnd!=0) print(frst/scnd)
+            if (scnd!=0.0) print(frst/scnd)
             else print("Нельзя делить на нуль")
         }
     }
